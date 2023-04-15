@@ -205,7 +205,7 @@ span a:hover {
         <img class="ops" src="public/er.jpg" />
         <br />
         <h3>Opps!! Not Found</h3>
-        <form action="/error" method="POST">
+        <form action="/failure" method="POST">
                 <button type="submit" class="buton">Go Back</button>
         </form>
     </div>
@@ -220,11 +220,11 @@ span a:hover {
     })
 
 })
-app.post("/error",function(req,res){
+app.post("/failure",function(req,res){
     res.redirect("/")
 })
 
-app.post("/city",function(req,res){
+app.post("/failure",function(req,res){
     res.redirect("/")
 })
 
