@@ -61,7 +61,7 @@ app.post("/city",function(req,res){
                                left: 15px;
                            }
                            .ans {
-                            background-color: whitesmoke;
+                            background-color: rgb(179, 179, 179);
                             padding: 30px;
                             border-radius: 10px;
                             position: absolute;
