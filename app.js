@@ -81,7 +81,7 @@ app.post("/city",function(req,res){
                               
                            
                            }
-                           @media (max-width: 900px) {
+                           @media screen and (max-width: 900px) {
                             .ans{
                                 width: 230px;
                                 position: absolute;
