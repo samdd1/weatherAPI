@@ -130,7 +130,9 @@ app.post("/city",function(req,res){
     })
 
 })
-app.post("/",
+app.post("/error",function(req,res){
+    res.redirect("/")
+})
 
 app.post("/failure",function(req,res){
     res.redirect("/")
