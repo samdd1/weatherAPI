@@ -60,17 +60,25 @@ app.post("/city",function(req,res){
                                position:absolute;
                                left: 15px;
                            }
-                           .ans{
-                                background-color: whitesmoke;
-                                padding:30px;
-                                border-radius: 10px;
-                                position:absolute;
-                                left:600px;
-                                width:300px;
-                                margin-top:60px;
-                                box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-
-                           }
+                           .ans {
+                            background-color: whitesmoke;
+                            padding: 30px;
+                            border-radius: 10px;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 300px;
+                            margin-top: 260px;
+                            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+                          }
+                          
+                          @media (max-width: 900px) {
+                            .ans {
+                              width: 230px;
+                              left: 50%;
+                              transform: translateX(-50%);
+                            }
+                          }
                            h3{
                             font-size: 40px;
                               
@@ -81,14 +89,7 @@ app.post("/city",function(req,res){
                               
                            
                            }
-                           @media screen and (max-width: 900px) {
-                            .ans{
-                                width: 230px;
-                                position: absolute;
-                               left:100px;
-                                
-                            }
-                        }
+                          
 
                         button{
                             background-color:orange;
