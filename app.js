@@ -85,7 +85,7 @@ app.post("/city",function(req,res){
                            h3{
                             font-size: 40px;
                               
-                            margin-top: 96px;
+                            margin-top: 100px;
                            }
                            h5{
                             font-size: 21px;
