@@ -29,7 +29,8 @@ app.post("/city",function(req,res){
                    const wind = ans.wind.speed;
                    const humidity = ans.main.humidity;
                    const image = "https://openweathermap.org/img/wn/"+ pic +"@2x.png";
-                   res.send(`
+                if(response.statusCode == 200){  
+                res.send(`
                             
                    <html>
                    <head>
@@ -63,6 +64,7 @@ app.post("/city",function(req,res){
                            .ans {
                             background-color: rgb(179, 179, 179);
                             padding: 30px;
+                            
                             border-radius: 10px;
                             position: absolute;
                             left: 50%;
@@ -79,17 +81,18 @@ app.post("/city",function(req,res){
                               transform: translateX(-50%);
                             }
                           }
+                          
                            h3{
                             font-size: 40px;
                               
-                            margin-top: 80px;
+                            margin-top: 96px;
                            }
                            h5{
                             font-size: 21px;
                               
                            
                            }
-                          
+                           
 
                         button{
                             background-color:orange;
@@ -117,12 +120,17 @@ app.post("/city",function(req,res){
                    </body>
                </html>
                    `)
+                   }
+                   else {
+                    res.sendFile(__dirname + "/error.html")
+                   }
 
             })
             
     })
 
 })
+app.post("/",
 
 app.post("/failure",function(req,res){
     res.redirect("/")
