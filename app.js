@@ -70,7 +70,7 @@ app.post("/city",function(req,res){
                             left: 50%;
                             transform: translateX(-50%);
                             width: 300px;
-                            margin-top: 160px;
+                            margin-top: 60px;
                             box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
                           }
                           
